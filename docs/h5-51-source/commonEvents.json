@@ -1,0 +1,867 @@
+{
+ "对话": [
+  {
+   "type": "setValue",
+   "name": "flag:有选择的对话",
+   "value": "false"
+  },
+  {
+   "type": "switch",
+   "condition": "flag:arg1",
+   "caseList": [
+    {
+     "case": "2",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'谢谢你救了我，为了感谢你的帮助请收下这些礼物.（收到1000金币）'"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:有选择的对话",
+       "value": "true"
+      }
+     ]
+    },
+    {
+     "case": "3",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'我可以给你怪物手册. 你可以用快捷键 X 去使用它。它能预测出当前楼层各类怪物对你的伤害。'"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:有选择的对话",
+       "value": "true"
+      }
+     ]
+    },
+    {
+     "case": "4",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'有些门不能用钥匙打开，只有当你打败它的守卫后才会自动打开。'"
+      }
+     ]
+    },
+    {
+     "case": "6",
+     "action": [
+      {
+       "type": "if",
+       "condition": "flag:arg4 ",
+       "true": [
+        {
+         "type": "setValue",
+         "name": "flag:content",
+         "value": "'魔塔一共50层，每10层为一个区域。如果不打败此区域的头目就不能到更高的地方。'"
+        }
+       ],
+       "false": [
+        {
+         "type": "setValue",
+         "name": "flag:content",
+         "value": "'你购买了礼物后再与商人对话，他会告诉你一些重要的消息。'"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "case": "7",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'在商店里你最好选择提升防御，只有在攻击力低于敌人的防御力时才提升攻击力'"
+      }
+     ]
+    },
+    {
+     "case": "12",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'你是否注意到 5,9,14,16,18 楼有的墙与众不同？'"
+      }
+     ]
+    },
+    {
+     "case": "15",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'如果你持有十字架，面对兽人和吸血鬼时你的攻击力加倍。在没有十字架的情况下你不可能打败吸血鬼。十字架被藏在高于15楼的墙内。'"
+      }
+     ]
+    },
+    {
+     "case": "16",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'我听说在塔内有2把隐藏的红钥匙。'"
+      }
+     ]
+    },
+    {
+     "case": "18",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'在这区域不多次提升攻击力，就不能打败 石头人。切记前人教训！'"
+      }
+     ]
+    },
+    {
+     "case": "21",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'大法师住在25楼，他是魔塔的主人。以你现在的状态去攻击他简直就是自杀。 你应当在取得更高级别的道具后再去打败他。'"
+      }
+     ]
+    },
+    {
+     "case": "23",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'我没有什么可说的，但有一个确切的消息藏在这个楼层里。(我没有搞清楚此层在原游戏里的作用，现不找到所有的暗墙29楼暗道不开)'"
+      }
+     ]
+    },
+    {
+     "case": "27",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'如果你到27楼时状态为：生命1500，攻击80，防御98，拥有1兰钥匙，5黄钥匙。那么祝贺你，你前期是比较成功的。'"
+      }
+     ]
+    },
+    {
+     "case": "31",
+     "action": [
+      {
+       "type": "if",
+       "condition": "flag:arg4",
+       "true": [
+        {
+         "type": "setValue",
+         "name": "flag:content",
+         "value": "'魔塔有50层高,但似乎你不能直接到50楼。'"
+        }
+       ],
+       "false": [
+        {
+         "type": "setValue",
+         "name": "flag:content",
+         "value": "'双手剑士的攻击力太高了，你最好到能对他一击必杀时再与他战斗。'"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "case": "33",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'别匆忙，放慢速度。'"
+      }
+     ]
+    },
+    {
+     "case": "36",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'如果你能用好4种移动宝物，你不用与强敌作战就能上楼。'"
+      }
+     ]
+    },
+    {
+     "case": "37",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'你需要用 地震卷轴  取出37楼仓库内的所有宝物。'"
+      }
+     ]
+    },
+    {
+     "case": "38",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'存放圣剑的房间的门坏了，你必须用镐破墙而入。'"
+      }
+     ]
+    },
+    {
+     "case": "39",
+     "action": [
+      {
+       "type": "if",
+       "condition": "flag:arg4",
+       "true": [
+        {
+         "type": "setValue",
+         "name": "flag:content",
+         "value": "'塔内有个 幸运金币。拥有它在打败敌人后能获得2倍的金钱。'"
+        }
+       ],
+       "false": [
+        {
+         "type": "setValue",
+         "name": "flag:content",
+         "value": "'谜题：“在3点，拥有传送功能的密宝 就会出现。'"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "case": "42",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'巫师 会用魔法攻击路过的人，在2个 魔法警卫 间通过会使你的生命减少一半。'"
+      }
+     ]
+    },
+    {
+     "case": "45",
+     "action": [
+      {
+       "type": "if",
+       "condition": "flag:arg4",
+       "true": [
+        {
+         "type": "setValue",
+         "name": "flag:content",
+         "value": "'44楼 被藏在异空间，你只能用密宝才能到达'"
+        }
+       ],
+       "false": [
+        {
+         "type": "setValue",
+         "name": "flag:content",
+         "value": "'神圣盾 能防御魔法攻击，但它被藏在异空间的楼层内。'"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "case": "46",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'41楼 事实上是左右对称的。'"
+      }
+     ]
+    },
+    {
+     "case": "47",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'如果要打败魔龙你需要 圣剑，圣盾，屠龙匕 或更高等级的装备。'"
+      }
+     ]
+    },
+    {
+     "case": "48",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:content",
+       "value": "'象骰子上5的形状是一种封印魔法，你最好记住它在你与49楼假魔王战斗时有用。'"
+      }
+     ]
+    },
+    {
+     "case": "default",
+     "action": [
+      "没有本层对话信息，请在公共事件“对话”中配置！",
+      {
+       "type": "break",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "if",
+   "condition": "flag:有选择的对话",
+   "true": [
+    {
+     "type": "choices",
+     "text": "\t[老人,oldman]${flag:content}",
+     "choices": [
+      {
+       "text": "谢谢",
+       "action": [
+        {
+         "type": "switch",
+         "condition": "flag:arg1",
+         "caseList": [
+          {
+           "case": "2",
+           "action": [
+            {
+             "type": "playSound",
+             "name": "获得道具"
+            },
+            {
+             "type": "setValue",
+             "name": "status:money",
+             "operator": "+=",
+             "value": "1000"
+            },
+            {
+             "type": "tip",
+             "text": "获得1000金币"
+            }
+           ]
+          },
+          {
+           "case": "3",
+           "action": [
+            {
+             "type": "setValue",
+             "name": "item:book",
+             "operator": "+=",
+             "value": "1"
+            }
+           ]
+          },
+          {
+           "case": "default",
+           "action": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "false": [
+    {
+     "type": "if",
+     "condition": "flag:arg4",
+     "true": [
+      "\t[商人,trader]${flag:content}"
+     ],
+     "false": [
+      "\t[老人,oldman]${flag:content}"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "function",
+   "function": "function(){\nlet f = `对话${core.getFlag('arg1')}`;\nif (core.getFlag('arg4')) f = f + '02';\ncore.setFlag(f, true)\n}"
+  },
+  {
+   "type": "hide",
+   "loc": [
+    "flag:arg2 ",
+    "flag:arg3 "
+   ],
+   "remove": true,
+   "time": 500
+  }
+ ],
+ "商人": [
+  {
+   "type": "switch",
+   "condition": "flag:arg1",
+   "caseList": [
+    {
+     "case": "6",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:money",
+       "value": "50"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:text",
+       "value": "'我有一把兰钥匙你出50个金币就卖给你。'"
+      }
+     ]
+    },
+    {
+     "case": "7",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:money",
+       "value": "50"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:text",
+       "value": "'我有五把黄钥匙你出50个金币就卖给你。'"
+      }
+     ]
+    },
+    {
+     "case": "12",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:money",
+       "value": "800"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:text",
+       "value": "'我有一把红钥匙你出800个金币就卖给你。'"
+      }
+     ]
+    },
+    {
+     "case": "15",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:money",
+       "value": "200"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:text",
+       "value": "'我有一把兰钥匙你出200个金币就卖给你。'"
+      }
+     ]
+    },
+    {
+     "case": "31",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:money",
+       "value": "1000"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:text",
+       "value": "'我有四把黄钥匙一把兰钥匙你出1000个金币就都给你。'"
+      }
+     ]
+    },
+    {
+     "case": "38",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:money",
+       "value": "200"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:text",
+       "value": "'我有3把黄钥匙你出200个金币就都给你。'"
+      }
+     ]
+    },
+    {
+     "case": "39",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:money",
+       "value": "2000"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:text",
+       "value": "'我有3把兰钥匙你出2000个金币就都给你。'"
+      }
+     ]
+    },
+    {
+     "case": "45",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:money",
+       "value": "1000"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:text",
+       "value": "'给我1000个金币我就提升你的生命2000点。'"
+      }
+     ]
+    },
+    {
+     "case": "47",
+     "action": [
+      {
+       "type": "setValue",
+       "name": "flag:money",
+       "value": "4000"
+      },
+      {
+       "type": "setValue",
+       "name": "flag:text",
+       "value": "'给我4000个金币我就给你地震卷轴，它可摧毁一层楼所有的墙'"
+      }
+     ]
+    },
+    {
+     "case": "default",
+     "action": [
+      "\t[商人,woman]没有本层商人信息，请在公共事件“商人”中配置！",
+      {
+       "type": "break",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "choices",
+   "text": "\t[商人,trader]${flag:text}",
+   "choices": [
+    {
+     "text": "我太需要了",
+     "action": [
+      {
+       "type": "if",
+       "condition": "(status:money >= flag:money)",
+       "true": [
+        {
+         "type": "setValue",
+         "name": "status:money",
+         "operator": "-=",
+         "value": "flag:money"
+        },
+        {
+         "type": "switch",
+         "condition": "flag:arg1",
+         "caseList": [
+          {
+           "case": "6",
+           "action": [
+            {
+             "type": "setValue",
+             "name": "item:blueKey",
+             "operator": "+=",
+             "value": "1"
+            }
+           ]
+          },
+          {
+           "case": "7",
+           "action": [
+            {
+             "type": "setValue",
+             "name": "item:yellowKey",
+             "operator": "+=",
+             "value": "5"
+            }
+           ]
+          },
+          {
+           "case": "12",
+           "action": [
+            {
+             "type": "setValue",
+             "name": "item:redKey",
+             "operator": "+=",
+             "value": "1"
+            }
+           ]
+          },
+          {
+           "case": "15",
+           "action": [
+            {
+             "type": "setValue",
+             "name": "item:blueKey",
+             "operator": "+=",
+             "value": "1"
+            }
+           ]
+          },
+          {
+           "case": "31",
+           "action": [
+            {
+             "type": "setValue",
+             "name": "item:yellowKey",
+             "operator": "+=",
+             "value": "4"
+            },
+            {
+             "type": "setValue",
+             "name": "item:blueKey",
+             "operator": "+=",
+             "value": "1"
+            }
+           ]
+          },
+          {
+           "case": "38",
+           "action": [
+            {
+             "type": "setValue",
+             "name": "item:yellowKey",
+             "operator": "+=",
+             "value": "3"
+            }
+           ]
+          },
+          {
+           "case": "39",
+           "action": [
+            {
+             "type": "setValue",
+             "name": "item:blueKey",
+             "operator": "+=",
+             "value": "3"
+            }
+           ]
+          },
+          {
+           "case": "45",
+           "action": [
+            {
+             "type": "playSound",
+             "name": "获得道具"
+            },
+            {
+             "type": "setValue",
+             "name": "status:hp",
+             "operator": "+=",
+             "value": "2000"
+            }
+           ]
+          },
+          {
+           "case": "47",
+           "action": [
+            {
+             "type": "setValue",
+             "name": "item:earthquake",
+             "operator": "+=",
+             "value": "1"
+            }
+           ]
+          },
+          {
+           "case": "default",
+           "action": []
+          }
+         ]
+        },
+        {
+         "type": "function",
+         "function": "function(){\nvar name = core.status.floorId + '@' + core.getFlag(\"arg2\", 0) + '@' + core.getFlag(\"arg3\", 0) + '@' + 'A';\ncore.setFlag(name, 1);\n}"
+        }
+       ],
+       "false": [
+        "\t[商人,woman]你的金币不够${flag:money}枚，无法交易！"
+       ]
+      }
+     ]
+    },
+    {
+     "text": "下次再说",
+     "action": []
+    }
+   ]
+  },
+  {
+   "type": "setValue",
+   "name": "flag:alt",
+   "value": "0"
+  }
+ ],
+ "商店": [
+  {
+   "type": "while",
+   "condition": "true",
+   "data": [
+    {
+     "type": "setValue",
+     "name": "flag:money1",
+     "value": "20+10*(flag:times1+1)*flag:times1"
+    },
+    {
+     "type": "choices",
+     "text": "\t[祭坛,blueShop]如果供奉${flag:money1}金币, 便可以增加你的力量, 你想要什么呢…",
+     "choices": [
+      {
+       "text": "生命+${100*(flag:times1+1)}",
+       "action": [
+        {
+         "type": "if",
+         "condition": "(status:money>=flag:money1)",
+         "true": [
+          {
+           "type": "playSound",
+           "name": "获得道具"
+          },
+          {
+           "type": "function",
+           "function": "function(){\ncore.addFlag(`${core.getFlag('ratio')}区购买hp`, 100 * (core.getFlag('times1', 0) + 1));\ncore.addFlag(`${core.getFlag('ratio')}区购买hp次数`, 1);\n}"
+          },
+          {
+           "type": "setValue",
+           "name": "status:hp",
+           "operator": "+=",
+           "value": "100*(flag:times1+1)"
+          },
+          {
+           "type": "setValue",
+           "name": "status:money",
+           "operator": "-=",
+           "value": "flag:money1"
+          },
+          {
+           "type": "setValue",
+           "name": "flag:times1",
+           "operator": "+=",
+           "value": "1"
+          }
+         ],
+         "false": [
+          {
+           "type": "tip",
+           "text": "你的金币不足${flag:money1}枚，无法供奉！"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "text": "攻击+${2*flag:ratio}",
+       "action": [
+        {
+         "type": "if",
+         "condition": "(status:money>=flag:money1)",
+         "true": [
+          {
+           "type": "playSound",
+           "name": "获得道具"
+          },
+          {
+           "type": "function",
+           "function": "function(){\ncore.addFlag(`${core.getFlag('ratio')}区购买atk`, 2 * core.getFlag('ratio', 1));\ncore.addFlag(`${core.getFlag('ratio')}区购买atk次数`, 1);\n}"
+          },
+          {
+           "type": "setValue",
+           "name": "status:atk",
+           "operator": "+=",
+           "value": "2*flag:ratio"
+          },
+          {
+           "type": "setValue",
+           "name": "status:money",
+           "operator": "-=",
+           "value": "flag:money1"
+          },
+          {
+           "type": "setValue",
+           "name": "flag:times1",
+           "operator": "+=",
+           "value": "1"
+          }
+         ],
+         "false": [
+          {
+           "type": "tip",
+           "text": "你的金币不足${flag:money1}枚，无法供奉！"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "text": "防御+${4*flag:ratio}",
+       "action": [
+        {
+         "type": "if",
+         "condition": "(status:money>=flag:money1)",
+         "true": [
+          {
+           "type": "playSound",
+           "name": "获得道具"
+          },
+          {
+           "type": "function",
+           "function": "function(){\ncore.addFlag(`${core.getFlag('ratio')}区购买def`, 4 * core.getFlag('ratio', 1));\ncore.addFlag(`${core.getFlag('ratio')}区购买def次数`, 1);\n}"
+          },
+          {
+           "type": "setValue",
+           "name": "status:def",
+           "operator": "+=",
+           "value": "4*flag:ratio"
+          },
+          {
+           "type": "setValue",
+           "name": "status:money",
+           "operator": "-=",
+           "value": "flag:money1"
+          },
+          {
+           "type": "setValue",
+           "name": "flag:times1",
+           "operator": "+=",
+           "value": "1"
+          }
+         ],
+         "false": [
+          {
+           "type": "tip",
+           "text": "你的金币不足${flag:money1}枚，无法供奉！"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "text": "离开",
+       "action": [
+        {
+         "type": "break",
+         "n": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

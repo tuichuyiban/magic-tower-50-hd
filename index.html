@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#5b6fe0" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M8 1 15 8 8 15 1 8z%22 fill=%22%23ffcf4a%22 stroke=%22%232a1b3d%22/%3E%3C/svg%3E" />
+    <title>魔塔 50 层 · 高清重制（1F–50F）</title>
+  </head>
+  <body>
+    <div id="app">
+      <main id="stage">
+        <canvas id="game" aria-label="魔塔游戏画面"></canvas>
+        <div id="curtain" class="hidden"></div>
+        <div id="floor-banner" class="hidden"></div>
+        <div id="dialog" class="hidden" role="dialog" aria-live="polite">
+          <div class="dlg-box">
+            <img class="dlg-face" alt="" />
+            <div class="dlg-main">
+              <div class="dlg-name"></div>
+              <div class="dlg-text"></div>
+              <div class="dlg-choices"></div>
+            </div>
+            <div class="dlg-more">▼</div>
+          </div>
+        </div>
+      </main>
+      <aside id="controls">
+        <div class="ctl-head">
+          <div class="ctl-title">魔塔 · HD</div>
+          <div class="ctl-sub">全五区 · 1F–50F</div>
+        </div>
+        <div class="dpad" role="group" aria-label="方向键">
+          <button class="dir up" data-dir="up" aria-label="上"><i></i></button>
+          <button class="dir left" data-dir="left" aria-label="左"><i></i></button>
+          <div class="dpad-center"><span></span></div>
+          <button class="dir right" data-dir="right" aria-label="右"><i></i></button>
+          <button class="dir down" data-dir="down" aria-label="下"><i></i></button>
+        </div>
+        <div class="ctl-buttons">
+          <button id="btn-manual" class="ui-btn">怪物手册</button>
+          <button id="btn-fly" class="ui-btn">魔杖传送</button>
+          <button id="btn-notes" class="ui-btn">备忘录</button>
+          <button id="btn-save" class="ui-btn">存档</button>
+          <button id="btn-load" class="ui-btn">读档</button>
+          <button id="btn-undo" class="ui-btn">回退一步</button>
+          <button id="btn-settings" class="ui-btn">设置</button>
+          <button id="btn-restart" class="ui-btn danger">重新开始</button>
+        </div>
+        <div class="hint">方向键 / WASD 移动 · 点击地图寻路<br />M/X 手册 · G/F 传送 · N 备忘录<br />P 存档 · L 读档 · Z 回退<br />O 设置 · R 重开</div>
+      </aside>
+    </div>
+    <div id="overlay" class="hidden" role="dialog" aria-modal="true">
+      <div class="modal">
+        <div class="modal-title"></div>
+        <div class="modal-body"></div>
+        <div class="modal-actions"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

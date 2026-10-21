@@ -1,0 +1,28 @@
+{
+  "name": "magic-tower-hd",
+  "private": true,
+  "version": "0.8.0",
+  "type": "module",
+  "description": "网页版 50 层魔塔高清重制 —— 1F–50F 全五区原版复刻",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "typecheck": "tsc --noEmit",
+    "simulate": "tsx scripts/simulate.ts",
+    "import-maps": "node scripts/import-h5.mjs",
+    "simulate:quick": "SIM_QUICK=1 tsx scripts/simulate.ts",
+    "simulate2": "tsx scripts/simulate2.ts",
+    "simulate2:quick": "SIM_QUICK=1 tsx scripts/simulate2.ts",
+    "route2": "M_START=noLastAltar M_SEED=285 M_NOISE=0.3 M_KY=60 M_KB=700 M_GEM=260 M_HOLY=0 tsx scripts/margin2.ts",
+    "route3": "tsx scripts/route3.ts",
+    "route4": "tsx scripts/route4.ts",
+    "zip": "bash scripts/make-zip.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.23.15",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
